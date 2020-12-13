@@ -11,7 +11,7 @@ struct Macierz dodaj (struct Macierz m1,struct Macierz m2)
     int i,j;
         //suma.r=m1.r;
         //suma.c=m1.c;
-        printf("dodaj.. %d %d %f %f\n",m1.r,m1.c, m1.tab[2][2],m2.tab[2][2]);
+       // printf("dodaj.. %d %d %f %f\n",m1.r,m1.c, m1.tab[2][2],m2.tab[2][2]);
         for (i = 0; i < m1.r; i++)
         {
             for (j=0; j < m1.c; j++)

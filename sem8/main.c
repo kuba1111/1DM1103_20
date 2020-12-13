@@ -34,26 +34,26 @@ int main(int argc, char *argv[])
         }
         else
         {
-            printf("wchodzę\n");
+           // printf("wchodzę\n");
             fin  = fopen(argv[2], "r");
             fin2 = fopen(argv[3], "r");
-            printf("przed\n");
+           // printf("przed\n");
             mac1=wczytaj(fin);
-            printf("1\n");
+            //printf("1\n");
             mac2=wczytaj(fin2);
-            printf("2\n");
+          //  printf("2\n");
 
-            printf("%d %d %d %d\n",mac1->r, mac1->c, mac2->r, mac2->c);
+            //printf("%d %d %d %d\n",mac1->r, mac1->c, mac2->r, mac2->c);
             
             for(int i=0; i < mac1->c; i++)
             {
                 for(int j=0; j< mac1->r;j++)
                 {
-                    printf("%f ",mac1->tab[i][j]);
+                   // printf("%f ",mac1->tab[i][j]);
                 }
             }
 
-            printf("po for\n");
+           // printf("po for\n");
 
             if( (mac1->r==mac2->r) && (mac2->c==mac1->c) ) 
                 zapiszwT(dodaj(*mac1, *mac2));
